@@ -50,9 +50,7 @@
     @if (Route::has('register'))
         <p class="mt-5 text-center text-sm text-slate-600">
             Need an account?
-            <x-link href="{{ route('register') }}" sm bold wire:navigate>
-                Register
-            </x-link>
+            <x-primary-link href="{{ route('register') }}" title="Register" />
         </p>
     @endif
 </x-auth>
